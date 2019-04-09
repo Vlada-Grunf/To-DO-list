@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Digital Cube Interview Task 2018</title>
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleW3.css">
+
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div class="header">
+            <form id="login_form">
+                <input type="text" name="username" id="username" placeholder="e-mail">
+                <input type="password" name="test123" id="password" placeholder="password">
+                <input type="button" id="login_btn" class="button" name="login_button" value="Log in">
+            </form>
+            <input type="button" id="logout_btn" class="button" name="logout_button" value="Log out"><br>
+            <div id="poruke">Morate biti ulogovani da bi koristili aplikaciju</div>
+            <h2 style="margin:5px">Moja To Do Lista</h2>
+        </div>
+
+        <div class="header" id="myHeader">
+
+            <input type="text" id="myInput" class="inputTask" placeholder="Šta treba uraditi...">
+
+            <div id="priorityBtn"><b>Dodaj</b>
+                <div id="priority_dropDown">
+                    <ul>
+                        <li class="hitno">hitno</li>
+                        <li class="normal">normalno</li>
+                        <li class="canWait">može da čeka</li>
+                    </ul>
+                </div>
+            </div>
+            <!--
+            <span id="addBtn">Dodaj</span>
+            -->
+        </div>
+        
+        <ul id="myUL">
+            <!--
+            <div class="zaglavlje">Klikni na stavku ako je završena<div style="width: 90%;" ></div><span class="close">delete</span></div>
+
+            <div class="prelaz1"></div>
+            <div class="prelaz2"></div>
+            <div class="prelaz3"></div>
+
+      <li>wtbetmqe  wtbetmqe wt <span class="close">delete</span></li>
+    
+            <li><div style="width: 90%;" >wtbetmqe wtbetmqe wt wtbetmqe wtbetmqe wtwtbetmqe wtbetmqe wtwtbetmqe wtbetmqe wtwtbetmqe wtbetmqe wtwtbetmqe wtbetmqe wtwtbetmqe wtbetmqe wt</div><span class="close">delete</span></li>
+-->
+        </ul>
+
+        <!-- Pojavljivanje DropDown menija -->
+        <div id="dropDown">
+            <ul>
+                <li class="hitno">hitno</li>
+                <li class="normal">normalan</li>
+                <li class="canWait">može da čeka</li>
+                <li class="uradjeno">urađeno</li>
+                <li class="izbrisi">izbriši</li>
+            </ul>
+        </div>
+        <div id="maska"></div>
+
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

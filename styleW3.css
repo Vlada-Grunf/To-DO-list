@@ -1,0 +1,155 @@
+
+
+/* Include the padding and border in an element's total width and height */
+* {
+  box-sizing: border-box;
+}
+
+/* Remove margins and padding from the list */
+ul {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+/* Style the list items */
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+  background: #c3c3c3;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+    position: relative;
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+ul li.checked:hover {
+    background: #c3c3c3;
+    color: black;
+}
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: auto;
+  padding: 10px 3px;
+
+
+
+}
+
+.close:hover {
+  background-color: #83231c;
+  color: white;
+}
+
+/* Style the header */
+.header {
+  width: 100%;
+  background-color: #f44336;
+  padding: 10px 1px;
+  color: white;
+  text-align: center;
+    min-width: 250px;
+}
+
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the input */
+.inputTask {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 85%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+/* Style the "Add" button */
+
+
+#priorityBtn:hover, .button:hover {
+  background-color: #bbb;
+}
+
+#priority_dropDown {
+    display: none;
+    width: 150px;
+    color:aliceblue;
+    position: absolute;
+    right: -1px;
+    top: 41px;
+    background-color: rgba(220, 20, 60, 0.3);
+    z-index: 100;
+}
+
+#dropDown {
+    display: none;
+    width: 150px;
+    color:aliceblue;
+    position: absolute;
+    left: 0px;
+    top: 41px;
+    background-color: rgba(220, 20, 60, 0.3);
+    z-index: 100;
+}
+
+#addBtn, #priorityBtn {
+  padding: 10px 3px;
+  width: 15%;
+  background: #d9d9d9;
+  color: #2a2a2a;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+    border-left: 1px solid #f44336;
+    position: relative
+}
+
+#addBtn:hover {
+  background-color: #bbb;
+}
